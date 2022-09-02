@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- navbar section  -->
     <header class="container">
         <nav>
             <div class="d-flex justify-content-between">
@@ -17,27 +18,45 @@
                     <h1 class="ps-5 mt-4"><span class="bg-primary text-light  rounded">News</span> Network</h1>
                 </div>
                 <div class="d-flex justify-content-around gap-5 pe-5 mt-2">
-                    <h2 class="btn btn-primary ps-5 pe-5 fs-4">Home</h2>
-                    <h2 class="btn btn-primary ps-5 pe-5 fs-4">News</h2>
-                    <h2 class="btn btn-primary ps-5 pe-5 fs-4">Blog</h2>
+                    <h2 class="btn btn-primary ps-5 pe-5 fs-4 fw-bold">Home</h2>
+                    <h2 class="btn btn-primary ps-5 pe-5 fs-4 fw-bold">News</h2>
+                    <h2 class="btn btn-primary ps-5 pe-5 fs-4 fw-bold">Blog</h2>
     
                 </div>
             </div>
         </nav>
     </header>
     <main>
+        <!-- catagories section   -->
         <section class="container mt-5">
             <div>
-                <div class="fs-5 btn ps-3 pe-3">Home</div>
-                <div class="fs-5 btn ps-3 pe-3">Breaking news</div>
-                <div class="fs-5 btn ps-3 pe-3">Regular news</div>
-                <div class="fs-5 btn ps-3 pe-3">International news</div>
-                <div class="fs-5 btn ps-3 pe-3">Sports</div>
-                <div class="fs-5 btn ps-3 pe-3">Entertainment</div>
-                <div class="fs-5 btn ps-3 pe-3">Culture</div>
-                <div class="fs-5 btn ps-3 pe-3">Arts</div>
-                <div class="fs-5 btn ps-3 pe-3">All news</div>
+                <div onclick="loadHomePageNews()" id="btn-home" class="fs-5 btn ps-3 pe-3">Home</div>
+                <div id="btn-breaking-news" class="fs-5 btn ps-3 pe-3">Breaking news</div>
+                <div id="btn-regular-news" class="fs-5 btn ps-3 pe-3">Regular news</div>
+                <div id="btn-international-news" class="fs-5 btn ps-3 pe-3">International news</div>
+                <div id="btn-sports" class="fs-5 btn ps-3 pe-3">Sports</div>
+                <div id="btn-entertainment" class="fs-5 btn ps-3 pe-3">Entertainment</div>
+                <div id="btn-culture" class="fs-5 btn ps-3 pe-3">Culture</div>
+                <div id="btn-arts" class="fs-5 btn ps-3 pe-3">Arts</div>
+                <div id="btn-all-news" class="fs-5 btn ps-3 pe-3">All news</div>
             </div>
+
+        </section>
+        <!-- show news number section  -->
+        <section class="container mt-5">
+            <input id="show-number" class="w-100 pt-3 pb-3" type="text">
+        </section>
+
+        <!-- showing news home section  -->
+
+        <section class="container mt-5">
+            <div id="show-news">
+
+            </div>
+            
+            
+
+            
 
         </section>
     </main>
@@ -45,7 +64,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-    <script src="js/news.js"></script>
+    <script src="js/home_news.js"></script>
+    <script src="js/breaking_news.js"></script>
 </body>
 
 </html>
