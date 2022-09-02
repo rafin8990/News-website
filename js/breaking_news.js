@@ -8,7 +8,7 @@ const displayBreakingNews=breakingNewsArea=>{
     const newsShowerField=document.getElementById('show-news')
     newsShowerField.innerHTML=``
     breakingNewsArea.forEach(breakingNews=>{
-        console.log(breakingNews)
+        
         const breakingNewsDiv=document.createElement('div')
         breakingNewsDiv.innerHTML=`
         <div  class="card mb-3" style="w-100;">
