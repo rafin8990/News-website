@@ -2,15 +2,15 @@ const loadHomePageNews= async()=>{
     const url=`https://openapi.programming-hero.com/api/news/category/01`
     const res=await fetch(url)
     const data= await res.json()
-    displayHomePageNews(data.data)
+    displaybreakingNews(data.data)
 }
 
-const displayHomePageNews=homePage=>{
+const displaybreakingNews=homePage=>{
 
     const newsShowerField=document.getElementById('show-news')
     newsShowerField.innerHTML=``
     homePage.forEach(homeNews=>{
-        console.log(homeNews)
+      
         const homeNewsDiv=document.createElement('div')
         homeNewsDiv.innerHTML=`
         <div  class="card mb-3" style="w-100;">
