@@ -13,7 +13,7 @@ catagories.forEach(catagory=>{
     // console.log(catagory)
     const catagoryDiv=document.createElement('div')
     catagoryDiv.innerHTML=`
-    <div class="btn btn-outline-success ps-3 pe-3" onclick="loadNewsPage('${catagory.category_id}')"> ${catagory.category_name}</div>
+    <div class="btn ps-3 pe-3" onclick="loadNewsPage('${catagory.category_id}')"> ${catagory.category_name}</div>
 
 
     `
