@@ -9,6 +9,7 @@ const displayNews = newsArea => {
   const newsShowerField = document.getElementById('show-news')
   // console.log(newsShowerField)
   newsShowerField.innerHTML = ``
+  
   const noNews=document.getElementById('no-found')
   const showNews=document.getElementById('show-massage')
   const showNewsNumber=document.getElementById('show-news-number')
@@ -90,4 +91,4 @@ const displayNews = newsArea => {
   })
   
 }
-// loadNewsPage()
+

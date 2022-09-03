@@ -3,11 +3,86 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>News Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header class="container">
+      <nav class="navbar bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand fs-2"> <span class="bg-success text-light rounded">News</span> <span class="text-success">Network</span> </a>
+            <form class="d-flex gap-2" role="search">
+              <button class="btn btn-outline-success bg-success text-light"><a class="text-light bg-success" style="text-decoration: none; " href="index.html" name="myanchor">Home</a></button>
+              <button class="btn btn-outline-success  bg-success text-light"><a class="text-light bg-success" style="text-decoration: none; " href="blog.html" name="myanchor">Blog</a></button>
+            </form>
+          </div>
+        </nav>
+        <hr>
+  </header>
+  <main>
+    <section>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Why we use templete String in JavaScript?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Template strings are a powerful feature of modern JavaScript released in ES6. It lets us insert/interpolate variables and expressions into strings without needing to concatenate like in older versions of JavaScript. It allows us to create strings that are complex and contain dynamic elements.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Difference between map, foreach, filte r& find 
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">1.Foreach takes a callback function and run that callback function on each element of array one by one.
+                Basically forEach works as a traditional for loop looping over the array and providing you array elements to do operations on them. <br>
+                2.The main difference between forEach and filter is that forEach just loop over the array and executes the callback but filter executes the callback and check its return value.<br>
+                3.Map like filter & foreach takes a callback and run it against every element on the array but whats makes it unique is it generate a new array based on your existing array. <br>
+                4.As the name already suggest reduce method of the array object is used to reduce the array to one single value.reduce takes a callback ( like every function we talked about ). Inside this callback we get two arguments sum & elem. The sum is the last returned value of the reduce function. 
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                The Difference Between Regular Functions and Arrow Functions
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                1.Arrow function — also called fat arrow function— is a new feature introduced in ES6 that is a more concise syntax for writing function expressions. While both regular JavaScript functions and arrow functions work in a similar manner, there are certain differences between them. <br>
+                2.Arrow functions do not have an arguments binding. However, they have access to the arguments object of the closest non-arrow parent function. Named and rest parameters are heavily relied upon to capture the arguments passed to arrow functions. <br>
+                3.Unlike regular functions, arrow functions do not have their own this. The value of this inside an arrow function remains the same throughout the lifecycle of the function and is always bound to the value of this in the closest non-arrow parent function.
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+  </main>
+  <footer class="mt-5" >
+    <div class="bg-dark text-light text-center p-5">
+        <div>
+            
+            <h1 class="fs-5 text-center align-text-bottom ">Copyright © 2022 | News Network</h1>
+            <p><a class="text-decoration-none text-light" href="">Privacy Policy</a> | <a class="text-decoration-none text-light" href="">Tarms of USE</a></p>
+            <div class="">
+                <i class="fa-brands footer-padding fa-square-facebook"></i>
+                <i class="fa-brands footer-padding fa-linkedin"></i>
+                <i class="fa-brands footer-padding fa-square-github"></i>
+                <i class="fa-brands footer-padding fa-square-twitter"></i>
+
+            </div>
+        </div>
+    </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
