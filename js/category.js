@@ -29,7 +29,7 @@ const loadCatagory= async()=>{
     
   })
   // loader start 
-//   toggleSpiner(true)
+  toggleSpiner(true)
   }
   
   
@@ -37,7 +37,7 @@ const loadCatagory= async()=>{
   
   loadCatagory()
   
-  /* const toggleSpiner=isloading=>{
+  const toggleSpiner=isloading=>{
     const loaderSection=document.getElementById('loader')
     if(isloading){
         loaderSection.classlist.remove('d-none')
@@ -45,4 +45,4 @@ const loadCatagory= async()=>{
     else{
         loaderSection.classlist.add('d-none')
     }
-  } */
+  }
