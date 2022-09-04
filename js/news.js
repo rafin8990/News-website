@@ -62,8 +62,7 @@ const displayNews = newsArea => {
         <div>
             <button type="button" onclick="loadNewsDetails1('${news._id}')" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i class="fa-solid fa-right-long"></i>
-            </button>
-          
+            </button> 
         </div>
 
     </div>
