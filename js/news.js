@@ -58,36 +58,13 @@ const displayNews = newsArea => {
         <div class="d-flex gap-2 align-items-center">
             <p><i class="fa-sharp fa-solid fa-eye"></i></p>
             <p>${news.total_view?news.total_view:'No view'}</p>
+        </div> 
+        <div>
+            <button type="button" onclick="loadNewsDetails1('${news._id}')" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-right-long"></i>
+            </button>
+          
         </div>
-      <div class="pe-5">
-                    <!-- Button trigger modal -->
-              <button type="button" class="btn btn-success ps-3 pe-3 " data-bs-toggle="modal"  data-bs-target="#exampleModal">
-                  <i class="fa-solid fa-arrow-right"></i>
-              </button>
-        
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"   aria-hidden="true">
-              <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                <p>Name: ${news.author.name?news.author.name:'No Data Found'}</p> 
-                <p> ${news.title?news.title:'No Title Found'}</p>
-                <p>View: <i class="fa-sharp fa-solid fa-eye"> </i> '${news.total_view?news.total_view:'No view'}'</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-              </div>
-              </div>
-              </div>
-
-     </div> 
 
     </div>
     </div>
@@ -99,6 +76,9 @@ const displayNews = newsArea => {
     
   })
   // stop loader 
-  toggleSpiner(false)
+  // toggleSpiner(false)
 }
 // loadNewsPage(08)
+
+
+

@@ -2,15 +2,12 @@
 
 
 const loadCatagory= async()=>{
-    try{
-      const url="https://openapi.programming-hero.com/api/news/categories" 
+      const url=`https://openapi.programming-hero.com/api/news/categories`
       const res=await fetch(url)
       const data= await res.json()
       displayCatagory(data.data.news_category)
-    }
-    catch(e){
-      console.log('Fetch error: ', error);
-    }
+    
+    
     
   }
   
@@ -32,7 +29,7 @@ const loadCatagory= async()=>{
     
   })
   // loader start 
-  toggleSpiner(true)
+//   toggleSpiner(true)
   }
   
   
@@ -40,7 +37,7 @@ const loadCatagory= async()=>{
   
   loadCatagory()
   
-  const toggleSpiner=isloading=>{
+  /* const toggleSpiner=isloading=>{
     const loaderSection=document.getElementById('loader')
     if(isloading){
         loaderSection.classlist.remove('d-none')
@@ -48,4 +45,4 @@ const loadCatagory= async()=>{
     else{
         loaderSection.classlist.add('d-none')
     }
-  }
+  } */
